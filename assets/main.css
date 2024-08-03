@@ -173,7 +173,7 @@ footer p {
 
 /* Nav Styles */
 
-.nav {
+nav {
     top: 0;
     position: fixed;
     z-index: 3;
@@ -216,14 +216,4 @@ footer p {
     padding: 0 calc(8px / 1);
     height: 44px;
     text-decoration: none;
-}
-
-.navMenu {
-    display: contents;
-    margin: 0;
-    padding: 0;
-}
-
-.navFlyout, .navMenuList {
-    display: inherit;
 }
