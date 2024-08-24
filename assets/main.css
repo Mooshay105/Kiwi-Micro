@@ -1,5 +1,10 @@
 /* Main Styles */
 
+* {
+	user-select: none;
+	overflow-x: hidden;
+}
+
 h1 {
 	color: #e1e1e1;
 	font-size: 2.5em;
@@ -34,7 +39,7 @@ body {
 footer {
 	text-align: center;
 	padding: 10px;
-	background-color: #0f0f0f;
+	background-color: #0a0a0a;
 	color: #ffffff;
 }
 
@@ -63,6 +68,59 @@ footer {
 .productImg {
 	max-height: calc(100% - 110px);
 	border-radius: 10px;
+}
+
+.configPrice {
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 0.009em;
+	line-height: 1.1666666667;
+}
+
+.configButton {
+	width: 100%;
+	height: 70px;
+	background: #00000000;
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.5em;
+	z-index: 2;
+	border: 2px solid #757575;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.configButton:hover {
+	border: 2px solid #9e9e9e;
+}
+
+.configButtonActive {
+	width: 100%;
+	height: 70px;
+	background: #00000000;
+	border-radius: 15px;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.5em;
+	z-index: 2;
+	border: 3px solid #d9d9d9;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.buyBTN {
+	background: #007aff;
+	border-radius: 15px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	z-index: 2;
+	border: 0;
 }
 
 /*Feetured Products Styles*/
@@ -209,4 +267,12 @@ nav {
 	padding: 0 calc(8px / 1);
 	height: 44px;
 	text-decoration: none;
+}
+
+/* Misc Styles */
+
+.lineBreak {
+	border-top: 1px solid #d2d2d7;
+	margin-bottom: 22px;
+	margin-top: 22px;
 }
