@@ -3,6 +3,7 @@
 * {
 	user-select: none;
 	overflow-x: hidden;
+	--errorPageColor: #040404;
 }
 
 h1 {
