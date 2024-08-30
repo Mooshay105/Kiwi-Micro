@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Kiwi Micro | kStore</title>
+		<link rel="icon" type="image/png" href="assets/img/logo.png" />
+		<link rel="stylesheet" type="text/css" href="assets/main.css" />
+		<script>
+			console.log("Hello Adventurer! Feel free to explore the logs! The Source Code is at https://github.com/Mooshay105/Kiwi-Micro.");
+		</script>
+	</head>
 
-<head>
-	<title>Kiwi Micro | kStore</title>
-	<link rel="icon" type="image/png" href="assets/img/logo.png">
-	<link rel="stylesheet" type="text/css" href="assets/main.css">
-	<script>
-		console.log("Hello Adventurer! Feel free to explore the logs! The Source Code is at https://github.com/Mooshay105/Kiwi-Micro.");
-	</script>
-</head>
-
-<body>
-	<nav>
-		<div class="navContent">
-			<ul class="navList">
-				<a href="https://kiwi-micro.com" class="navLink">
-					<img src="assets/img/logo.png" width="30px" height="30px">
-				</a>
-				<a href="kcamera.html" class="navLink">
-					kCamera
-				</a>
-				<a href="kstore.html" class="navLink">
-					kStore
-				</a>
-				<a href="support.html" class="navLink">
-					Support
-				</a>
-			</ul>
-		</div>
-	</nav>
-	<main>
-		<section class="main">
-			<section class="hero">
-				<video autoplay muted loop playsinline class="heroVideo">
-					<source src="assets/hero.mp4" type="video/mp4">
-				</video>
-				<div class="heroOverlay">
-					<div class="heroContent">
-						<h1>kStore</h1>
-						<h2>Chose How Much Storage You Want</h2>
-						<button class="configButtonActive" id="kStoreStorage256gb"
-							onclick="selectProduct('kStoreStorage256gb')">256 GB</button>
-						<button class="configButton" id="kStoreStorage512gb"
-							onclick="selectProduct('kStoreStorage512gb')">512 GB</button>
-						<br>
-						<h2 class="configPrice" id="configPrice">$Price</h2>
-						<div class="lineBreak"></div>
-						<button class="buyBTN">Comming Soon</button>
-						<script src="assets/productManager.js"></script>
+	<body>
+		<nav>
+			<div class="navContent">
+				<ul class="navList">
+					<a href="https://kiwi-micro.com" class="navLink">
+						<img src="assets/img/logo.png" width="30px" height="30px" />
+					</a>
+					<a href="kcamera.html" class="navLink"> kCamera </a>
+					<a href="kstore.html" class="navLink"> kStore </a>
+					<a href="support.html" class="navLink"> Support </a>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<section class="main">
+				<section class="hero">
+					<video autoplay muted loop playsinline class="heroVideo">
+						<source src="assets/hero.mp4" type="video/mp4" />
+					</video>
+					<div class="heroOverlay">
+						<div class="heroContent">
+							<h1>kStore</h1>
+							<h2>Chose How Much Storage You Want</h2>
+							<button class="configButtonActive" id="kStoreStorage256gb" onclick="selectProduct('kStoreStorage256gb')">256 GB</button>
+							<button class="configButton" id="kStoreStorage512gb" onclick="selectProduct('kStoreStorage512gb')">512 GB</button>
+							<br />
+							<h2 class="configPrice" id="configPrice">$Price</h2>
+							<div class="lineBreak"></div>
+							<button class="buyBTN">Comming Soon</button>
+							<script src="assets/productManager.js"></script>
+						</div>
 					</div>
-				</div>
+				</section>
 			</section>
-		</section>
-	</main>
-	<footer>
-		<p>Copyright &copy; 2024 Kiwi Micro</p>
-	</footer>
-</body>
-
+		</main>
+		<footer>
+			<p>Copyright &copy; 2024 Kiwi Micro</p>
+		</footer>
+	</body>
 </html>
