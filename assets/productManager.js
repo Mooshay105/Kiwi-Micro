@@ -1,5 +1,5 @@
-const kCameraCameraNoNoIRPrice = "$90";
-const kCameraCameraNoIRPrice = "$100";
+const kCameraCameraNoNoIRPrice = "$100";
+const kCameraCameraNoIRPrice = "$110";
 const kStoreStorage256gbPrice = "kStore 256GB Coming Soon!";
 const kStoreStorage512gbPrice = "kStore 512GB Coming Soon!";
 const kCameraCameraNoNoIRObject = document.getElementById("kCameraCameraNoNoIR");
