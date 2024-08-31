@@ -1,11 +1,11 @@
-const kCameraStorage16gbPrice = "kCamera 16GB Coming Soon!";
-const kCameraStorage32gbPrice = "kCamera 32GB Coming Soon!";
+const kCameraCameraNoNoIRPrice = "$90";
+const kCameraCameraNoIRPrice = "$100";
 
 const kStoreStorage256gbPrice = "kStore 256GB Coming Soon!";
 const kStoreStorage512gbPrice = "kStore 512GB Coming Soon!";
 
-const kCameraStorage16gbObject = document.getElementById("kCameraStorage16gb");
-const kCameraStorage32gbObject = document.getElementById("kCameraStorage32gb");
+const kCameraCameraNoNoIRObject = document.getElementById("kCameraCameraNoNoIR");
+const kCameraCameraNoIRObject = document.getElementById("kCameraCameraNoIR");
 
 const kStoreStorage256gbObject = document.getElementById("kStoreStorage256gb");
 const kStoreStorage512gbObject = document.getElementById("kStoreStorage512gb");
@@ -17,7 +17,7 @@ const pageTitle = document.title;
 
 if (pageTitle == "Kiwi Micro | kCamera") {
 	console.log("kCamera Page Detected!");
-	configPrice.innerHTML = kCameraStorage16gbPrice;
+	configPrice.innerHTML = kCameraCameraNoNoIRPrice;
 }
 if (pageTitle == "Kiwi Micro | kStore") {
 	console.log("kStore Page Detected!");
@@ -25,10 +25,10 @@ if (pageTitle == "Kiwi Micro | kStore") {
 }
 
 function selectProduct(productID) {
-	if (productID == "kCameraStorage16gb") {
-		kCameraStorageX(16);
-	} else if (productID == "kCameraStorage32gb") {
-		kCameraStorageX(32);
+	if (productID == "kCameraCameraNoNoIR") {
+		kCameraCameraX("NoNoIR");
+	} else if (productID == "kCameraCameraNoIR") {
+		kCameraCameraX("NoIR");
 	} else if (productID == "kStoreStorage256gb") {
 		kStoreStorageX(256);
 	} else if (productID == "kStoreStorage512gb") {
@@ -36,19 +36,19 @@ function selectProduct(productID) {
 	}
 }
 
-function kCameraStorageX(storageSize) {
-	if (storageSize == 16) {
-		configPrice.innerHTML = kCameraStorage16gbPrice;
-		kCameraStorage16gbObject.classList.add("configButtonActive");
-		kCameraStorage32gbObject.classList.remove("configButtonActive");
-		kCameraStorage32gbObject.classList.add("configButton");
-		kCameraStorage16gbObject.classList.remove("configButton");
-	} else if (storageSize == 32) {
-		configPrice.innerHTML = kCameraStorage32gbPrice;
-		kCameraStorage16gbObject.classList.remove("configButtonActive");
-		kCameraStorage16gbObject.classList.add("configButton");
-		kCameraStorage32gbObject.classList.remove("configButton");
-		kCameraStorage32gbObject.classList.add("configButtonActive");
+function kCameraCameraX(storageSize) {
+	if (storageSize == "NoNoIR") {
+		configPrice.innerHTML = kCameraCameraNoNoIRPrice;
+		kCameraCameraNoNoIRObject.classList.add("configButtonActive");
+		kCameraCameraNoIRObject.classList.remove("configButtonActive");
+		kCameraCameraNoIRObject.classList.add("configButton");
+		kCameraCameraNoNoIRObject.classList.remove("configButton");
+	} else if (storageSize == "NoIR") {
+		configPrice.innerHTML = kCameraCameraNoIRPrice;
+		kCameraCameraNoNoIRObject.classList.remove("configButtonActive");
+		kCameraCameraNoNoIRObject.classList.add("configButton");
+		kCameraCameraNoIRObject.classList.remove("configButton");
+		kCameraCameraNoIRObject.classList.add("configButtonActive");
 	}
 }
 
