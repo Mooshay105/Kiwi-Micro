@@ -142,6 +142,7 @@ footer {
 	padding-bottom: 0;
 	background-color: #000000;
 	z-index: 1;
+	text-align: center;
 }
 
 .feeturedProductItem p {
