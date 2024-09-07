@@ -6,8 +6,8 @@ import kCameraProductVideo from "../assets/kCamera.mp4";
 import React, { useState } from "react";
 
 function Kcamera() {
-	const kCameraCameraWithoutNoIRPrice = "$110";
-	const kCameraCameraNoIRPrice = "$100";
+	const kCameraCameraWithoutNoIRPrice = "$100";
+	const kCameraCameraNoIRPrice = "$110";
 
 	const [price, setPrice] = useState(kCameraCameraWithoutNoIRPrice);
 	const [activeOption, setActiveOption] = useState("kCameraCameraWithoutNoIR");
