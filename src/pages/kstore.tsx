@@ -8,17 +8,21 @@ import React, { useState } from "react";
 function Kstore() {
 	const kStoreStorage256gbPrice = "kStore 256GB Coming Soon!";
 	const kStoreStorage512gbPrice = "kStore 512GB Coming Soon!";
-
+	const kStoreStorage256gbCheckout = "#";
+	const kStoreStorage512gbCheckout = "#";
 	const [price, setPrice] = useState(kStoreStorage256gbPrice);
 	const [activeOption, setActiveOption] = useState("kStoreStorage256gb");
+	const [activeOptionCheckout, setActiveOptionCheckout] = useState("kStoreStorage256gb");
 
 	function handleConfigClick(option: string) {
 		if (option === "kStoreStorage256gb") {
 			setPrice(kStoreStorage256gbPrice);
 			setActiveOption("kStoreStorage256gb");
+			setActiveOptionCheckout("kStoreStorage256gb");
 		} else if (option === "kStoreStorage512gb") {
 			setPrice(kStoreStorage512gbPrice);
 			setActiveOption("kStoreStorage512gb");
+			setActiveOptionCheckout("kStoreStorage512gb");
 		}
 	}
 
@@ -45,7 +49,7 @@ function Kstore() {
 								{price}
 							</h2>
 							<div className="lineBreak"></div>
-							<a className="buyBTN" id="buyBTN">
+							<a className="buyBTN" href={activeOptionCheckout === "kStoreStorage256gb" ? kStoreStorage256gbCheckout : kStoreStorage512gbCheckout} id="buyBTN">
 								Coming Soon
 							</a>
 						</div>

@@ -8,17 +8,21 @@ import React, { useState } from "react";
 function Kcamera() {
 	const kCameraCameraWithoutNoIRPrice = "$100";
 	const kCameraCameraNoIRPrice = "$110";
-
+	const kCameraCameraNoIRCheckout = "#";
+	const kCameraCameraWithoutNoIRCheckout = "#";
 	const [price, setPrice] = useState(kCameraCameraWithoutNoIRPrice);
 	const [activeOption, setActiveOption] = useState("kCameraCameraWithoutNoIR");
+	const [activeOptionCheckout, setActiveOptionCheckout] = useState("kCameraCameraWithoutNoIR");
 
 	function handleConfigClick(option: string) {
 		if (option === "kCameraCameraNoIR") {
 			setPrice(kCameraCameraNoIRPrice);
 			setActiveOption("kCameraCameraNoIR");
+			setActiveOptionCheckout("kCameraCameraNoIR");
 		} else if (option === "kCameraCameraWithoutNoIR") {
 			setPrice(kCameraCameraWithoutNoIRPrice);
 			setActiveOption("kCameraCameraWithoutNoIR");
+			setActiveOptionCheckout("kCameraCameraWithoutNoIR");
 		}
 	}
 
@@ -45,7 +49,7 @@ function Kcamera() {
 								{price}
 							</h2>
 							<div className="lineBreak"></div>
-							<a className="buyBTN" id="buyBTN">
+							<a className="buyBTN" href={activeOptionCheckout === "kCameraCameraNoIR" ? kCameraCameraNoIRCheckout : kCameraCameraWithoutNoIRCheckout} id="buyBTN">
 								Coming Soon
 							</a>
 						</div>
