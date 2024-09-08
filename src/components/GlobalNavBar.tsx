@@ -5,6 +5,7 @@ interface GlobalNavBarProps {
 }
 
 function GlobalNavBar({ blur }: GlobalNavBarProps) {
+	console.log("Hello Adventurer! Feel free to explore the logs! The Source Code is at https://github.com/Mooshay105/Kiwi-Micro.");
 	return (
 		<nav className={blur ? "navBlur" : ""}>
 			<div className="navContent">
