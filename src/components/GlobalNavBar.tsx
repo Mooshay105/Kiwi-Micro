@@ -1,11 +1,25 @@
 import logo from "../assets/img/logo.png";
 
+let pageTitle = document.title;
+let fullPageURL = window.location.href;
+let newPageTitle;
+let pageURL = fullPageURL.split("/").slice(0, 3).join("/");
+
+if (pageURL === "https://kiwi-micro.com") {
+	newPageTitle = "Kiwi Micro | " + pageTitle;
+} else if (pageURL === "https://kangaroo-micro.com") {
+	newPageTitle = "Kangaroo Micro | " + pageTitle;
+} else {
+	newPageTitle = "Micro Dev of All Micros | " + pageTitle;
+}
+
+document.title = newPageTitle;
+
 interface GlobalNavBarProps {
 	blur: boolean;
 }
 
 function GlobalNavBar({ blur }: GlobalNavBarProps) {
-	console.log("Hello Adventurer! Feel free to explore the logs! The Source Code is at https://github.com/Mooshay105/Kiwi-Micro.");
 	return (
 		<nav className={blur ? "navBlur" : ""}>
 			<div className="navContent">
