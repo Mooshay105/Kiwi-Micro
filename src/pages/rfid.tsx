@@ -20,7 +20,7 @@ function Kcamera() {
 					<div className="heroOverlay">
 						<div className="heroContent">
 							<h1>RFID Reader</h1>
-							<p className="productPageText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
+							<p className="productPageText">Enhance your operations with our cutting-edge RFID Asset Management System, providing reliable RFID reading capabilities and efficient asset tracking.</p>
 							<h2 className="configPrice" id="configPrice">
 								{price}
 							</h2>
