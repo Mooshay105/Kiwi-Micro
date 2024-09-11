@@ -15,8 +15,8 @@ export default defineConfig({
 		rollupOptions: {
 			input: {
 				home: resolve(root, "index.html"),
-				kcamera: resolve(root, "kcamera.html"),
-				kstore: resolve(root, "kstore.html"),
+				rfid: resolve(root, "rfid.html"),
+				nas: resolve(root, "nas.html"),
 				support: resolve(root, "support.html"),
 			},
 		},
