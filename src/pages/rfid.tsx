@@ -2,30 +2,32 @@ import GlobalNavBar from "../components/GlobalNavBar";
 import GlobalFooter from "../components/GlobalFooter";
 import ReactDOM from "react-dom/client";
 import "/assets/main.css";
-import kCameraProductVideo from "../assets/rfid.mp4";
+import RFIDProductVideo from "../assets/RFID.mp4";
 import React, { useState } from "react";
 
-function Kcamera() {
-	const RFIDReaderCheckoutURL = "#";
-	const price = "$110";
+function RFID() {
+	const RFIDPrice = "Price Comming Soon!";
+	const RFIDCheckout = "#";
+	const [price, setPrice] = useState(RFIDPrice);
+	const [activeOptionCheckout, setActiveOptionCheckout] = useState(RFIDCheckout);
 
 	return (
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={false} />
-				<section className="hero">
-					<video autoPlay muted loop className="heroVideo">
-						<source src={kCameraProductVideo} type="video/mp4" />
+				<br />
+				<section className="productPage">
+					<h1 className="productPageHeader">RFID Reader</h1>
+					<video autoPlay muted loop className="productVideo">
+						<source src={RFIDProductVideo} type="video/mp4" />
 					</video>
-					<div className="heroOverlay">
-						<div className="heroContent">
-							<h1>RFID Reader</h1>
-							<p className="productPageText">Enhance your operations with our cutting-edge RFID Asset Management System, providing reliable RFID reading capabilities and efficient asset tracking.</p>
-							<h2 className="configPrice" id="configPrice">
-								{price}
-							</h2>
-							<div className="lineBreak"></div>
-							<a className="buyBTN" href={RFIDReaderCheckoutURL} id="buyBTN">
+					<div>
+						<p className="productPageDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
+						<br />
+						<h2 className="configPrice">{price}</h2>
+						<div className="lineBreak"></div>
+						<div className="buyButtonContainer">
+							<a className="buyButton" href={activeOptionCheckout}>
 								Coming Soon
 							</a>
 						</div>
@@ -37,4 +39,4 @@ function Kcamera() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Kcamera />);
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<RFID />);

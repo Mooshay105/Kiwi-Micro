@@ -113,13 +113,28 @@ footer {
 	text-align: center;
 }
 
-.buyBTN {
+.configButtonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.buyButton {
 	background: #007aff;
 	border-radius: 15px;
 	display: inline-block;
 	padding: 10px 20px;
 	color: #fff;
 	text-decoration: none;
+	margin: 10px;
+}
+
+.buyButtonContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 /*Feetured Products Styles*/
