@@ -36,13 +36,16 @@ function NAS() {
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={false} />
-				<section className="hero">
-					<video autoPlay muted loop className="heroVideo">
-						<source src={NASProductVideo} type="video/mp4" />
-					</video>
-					<div className="heroOverlay">
+				<br />
+				<section>
+					<div className="left">
+						<h1>NAS</h1>
+						<video autoPlay muted loop className="productVideo">
+							<source src={NASProductVideo} type="video/mp4" />
+						</video>
+					</div>
+					<div className="right">
 						<div className="heroContent">
-							<h1>NAS</h1>
 							<p className="productPageText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
 							<h2>Chose How Much Storage You Want</h2>
 							<button className={activeOption === "500gb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("500gb")}>

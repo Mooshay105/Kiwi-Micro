@@ -46,6 +46,28 @@ footer {
 
 /*Product Styles*/
 
+.left {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.left h1 {
+	margin-left: 65px;
+}
+
+.right {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.productVideo {
+	margin-left: 50px;
+	width: calc(100vw - (50% + 10px));
+	border-radius: 30px;
+}
+
 .products {
 	display: flex;
 	flex-wrap: wrap;
