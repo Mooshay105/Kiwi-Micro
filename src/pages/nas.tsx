@@ -37,35 +37,31 @@ function NAS() {
 			<div className="main">
 				<GlobalNavBar blur={false} />
 				<br />
-				<section>
-					<div className="left">
-						<h1>NAS</h1>
-						<video autoPlay muted loop className="productVideo">
-							<source src={NASProductVideo} type="video/mp4" />
-						</video>
-					</div>
-					<div className="right">
-						<div className="heroContent">
-							<p className="productPageText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
-							<h2>Chose How Much Storage You Want</h2>
-							<button className={activeOption === "500gb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("500gb")}>
-								500 GB
-							</button>
-							<button className={activeOption === "1tb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("1tb")}>
-								1 TB
-							</button>
-							<button className={activeOption === "2tb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("2tb")}>
-								2 TB
-							</button>
-							<br />
-							<h2 className="configPrice" id="configPrice">
-								{price}
-							</h2>
-							<div className="lineBreak"></div>
-							<a className="buyBTN" href={activeOptionCheckout} id="buyBTN">
-								Coming Soon
-							</a>
-						</div>
+				<section className="productPage">
+					<h1 className="productPageHeader">NAS</h1>
+					<video autoPlay muted loop className="productVideo">
+						<source src={NASProductVideo} type="video/mp4" />
+					</video>
+					<div>
+						<p className="productPageDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
+						<h2 className="productPageHeader">Chose How Much Storage You Want</h2>
+						<button className={activeOption === "500gb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("500gb")}>
+							500 GB
+						</button>
+						<button className={activeOption === "1tb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("1tb")}>
+							1 TB
+						</button>
+						<button className={activeOption === "2tb" ? "configButtonActive" : "configButton"} onClick={() => handleConfigClick("2tb")}>
+							2 TB
+						</button>
+						<br />
+						<h2 className="configPrice" id="configPrice">
+							{price}
+						</h2>
+						<div className="lineBreak"></div>
+						<a className="buyBTN" href={activeOptionCheckout} id="buyBTN">
+							Coming Soon
+						</a>
 					</div>
 				</section>
 				<GlobalFooter />

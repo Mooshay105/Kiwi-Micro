@@ -38,62 +38,41 @@ body {
 }
 
 footer {
+	position: absolute;
 	text-align: center;
+	width: 100%;
 	padding: 10px;
 	background-color: #0a0a0a;
 	color: #ffffff;
+	z-index: 999;
 }
 
 /*Product Styles*/
 
-.left {
-	width: 50%;
-	height: 100%;
-	float: left;
+.productPageHeader {
+	text-align: center;
 }
 
-.left h1 {
-	margin-left: 65px;
-}
-
-.right {
-	width: 50%;
-	height: 100%;
-	float: right;
+.productPageHeader h1 {
+	font-size: 50px;
 }
 
 .productVideo {
 	margin-left: 50px;
-	width: calc(100vw - (50% + 10px));
+	width: calc(100vw - 100px);
 	border-radius: 30px;
 }
 
-.products {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	background-color: #ffffff;
-}
-
-.productItem {
-	height: fit-content;
-	width: calc(45vw - 10px);
-	margin: 10px;
-	padding: 20px;
-	padding-bottom: 0;
-	background-color: #000000;
-}
-
-.productItem p {
-	padding-bottom: 10px;
-}
-
-.productImg {
-	max-height: calc(100% - 110px);
-	border-radius: 10px;
+.productPageDescription {
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: calc(100vw - 250px);
+	font-size: 30px;
 }
 
 .configPrice {
+	text-align: center;
 	font-size: 24px;
 	font-weight: 600;
 	letter-spacing: 0.009em;
@@ -101,7 +80,7 @@ footer {
 }
 
 .configButton {
-	width: 100%;
+	width: calc(100% - 400px);
 	height: 70px;
 	background: #00000000;
 	border-radius: 15px;
@@ -120,7 +99,7 @@ footer {
 }
 
 .configButtonActive {
-	width: 100%;
+	width: calc(100% - 400px);
 	height: 70px;
 	background: #00000000;
 	border-radius: 15px;
@@ -141,13 +120,6 @@ footer {
 	padding: 10px 20px;
 	color: #fff;
 	text-decoration: none;
-	font-size: 1em;
-	z-index: 2;
-	border: 0;
-}
-
-.productPageText {
-	text-align: left;
 }
 
 /*Feetured Products Styles*/
