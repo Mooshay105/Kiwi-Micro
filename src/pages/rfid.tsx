@@ -2,7 +2,7 @@ import GlobalNavBar from "../components/GlobalNavBar";
 import GlobalFooter from "../components/GlobalFooter";
 import ReactDOM from "react-dom/client";
 import "/assets/main.css";
-import RFIDProductVideo from "../assets/RFID.mp4";
+import RFIDProductVideo from "../assets/rfid.mp4";
 import React, { useState } from "react";
 
 function RFID() {
@@ -22,7 +22,7 @@ function RFID() {
 						<source src={RFIDProductVideo} type="video/mp4" />
 					</video>
 					<div>
-						<p className="productPageDescription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sapiente illum adipisci, iste quos quis excepturi odit debitis blanditiis necessitatibus rerum iure, qui voluptatum magni omnis distinctio odio enim repellendus.</p>
+						<p className="productPageDescription">Enhance your operations with our cutting-edge RFID Asset Management System, providing reliable RFID reading capabilities and efficient asset tracking.</p>
 						<br />
 						<h2 className="configPrice">{price}</h2>
 						<div className="lineBreak"></div>
