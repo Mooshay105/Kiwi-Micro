@@ -30,6 +30,9 @@ function GlobalNavBar({ blur }: GlobalNavBarProps) {
 					<a href="rfid.html" className="navLink">
 						RFID Reader
 					</a>
+					<a href="rfidTags.html" className="navLink">
+						RFID Tags
+					</a>
 					<a href="nas.html" className="navLink">
 						NAS
 					</a>
