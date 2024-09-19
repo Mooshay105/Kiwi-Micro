@@ -6,7 +6,7 @@ import RFIDProductVideo from "../assets/rfid.mp4";
 import React, { useState } from "react";
 
 function RFID() {
-	const RFIDPrice = "Price Comming Soon!";
+	const RFIDPrice = "$110.00";
 	const RFIDCheckout = "#";
 	const [price, setPrice] = useState(RFIDPrice);
 	const [activeOptionCheckout, setActiveOptionCheckout] = useState(RFIDCheckout);
@@ -23,6 +23,10 @@ function RFID() {
 					</video>
 					<div>
 						<p className="productPageDescription">Enhance your operations with our cutting-edge RFID Asset Management System, providing reliable RFID reading capabilities and efficient asset tracking.</p>
+						<p className="productPageDescription noteText">Notes:</p>
+						<p className="productPageDescription">
+							1. The Kiwi Micro RFID Reader is only compatible High Frequency (HF) RFID tags. You can buy them <a href="/rfidtags.html">here</a>.
+						</p>
 						<br />
 						<h2 className="configPrice">{price}</h2>
 						<div className="lineBreak"></div>
