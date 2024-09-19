@@ -16,6 +16,7 @@ export default defineConfig({
 			input: {
 				home: resolve(root, "index.html"),
 				rfid: resolve(root, "rfid.html"),
+				rfidtags: resolve(root, "rfidtags.html"),
 				nas: resolve(root, "nas.html"),
 				support: resolve(root, "support.html"),
 			},
