@@ -15,7 +15,7 @@ function RFID() {
 				<GlobalNavBar blur={false} />
 				<br />
 				<section className="productPage">
-					<h1 className="productPageHeader">Heigh Frequency RFID Tags</h1>
+					<h1 className="productPageHeader">High-Frequency RFID Tags</h1>
 					<video autoPlay muted loop className="productVideo">
 						<source src={productVideo} type="video/mp4" />
 					</video>
