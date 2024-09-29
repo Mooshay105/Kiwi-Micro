@@ -47,6 +47,8 @@ footer {
 	z-index: 999;
 }
 
+/* Contact Styles */
+
 .map {
 	border: 0;
 	border-radius: 15px;
@@ -80,11 +82,12 @@ footer {
 	display: flex;
 	flex-direction: column;
 	width: 50%;
-	margin: 20px;
+	margin-left: 20px;
 }
 
 .info p {
-	margin: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*Feetured Products Styles*/
