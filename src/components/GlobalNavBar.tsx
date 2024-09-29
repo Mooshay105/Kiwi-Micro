@@ -12,15 +12,6 @@ function GlobalNavBar({ blur }: GlobalNavBarProps) {
 					<a href="https://kiwi-micro.com" className="navLink">
 						<img src={logo} width="30px" height="30px" alt="Logo" />
 					</a>
-					<a href="rfid.html" className="navLink">
-						RFID Reader
-					</a>
-					<a href="rfidtags.html" className="navLink">
-						RFID Tags
-					</a>
-					<a href="nas.html" className="navLink">
-						NAS
-					</a>
 					<a href="support.html" className="navLink">
 						Support
 					</a>
