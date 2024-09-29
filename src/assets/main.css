@@ -50,7 +50,7 @@ footer {
 .map {
 	border: 0;
 	border-radius: 15px;
-	width: 600px;
+	width: 700px;
 	height: 450px;
 }
 
@@ -59,6 +59,8 @@ footer {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin-inline: auto;
+	max-width: fit-content;
 }
 
 @media screen and (max-width: 700px) {
