@@ -97,7 +97,6 @@ footer {
 
 .feeturedProductItem {
 	height: fit-content;
-	/* width: calc(45vw - 10px); */
 	width: calc(100vw - 70px);
 	margin: 10px;
 	padding: 20px;
