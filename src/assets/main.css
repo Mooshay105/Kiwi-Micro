@@ -134,6 +134,18 @@ footer {
 	margin-bottom: 5px;
 }
 
+.infoLeft {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 20px;
+}
+
+.infoLeft p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 /*Feetured Products Styles*/
 
 .feeturedProducts {
