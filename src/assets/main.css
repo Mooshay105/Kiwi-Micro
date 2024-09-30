@@ -120,11 +120,43 @@ footer {
 	max-width: fit-content;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 810px) {
 	.gallery {
 		flex-direction: column;
 		justify-content: center;
 	}
+	.galleryInfo {
+		text-align: center;
+	}
+	.galleryInfoLeft {
+		text-align: center;
+	}
+	.gallerybtn {
+		background: #007aff;
+		border-radius: 15px;
+		display: inline-block;
+		padding: 10px 20px;
+		color: #fff;
+		text-decoration: none;
+		font-size: 1em;
+		z-index: 2;
+		width: fit-content;
+		margin-bottom: 10px;
+		margin-inline: auto;
+	}
+}
+
+.gallerybtn {
+	background: #007aff;
+	border-radius: 15px;
+	display: inline-block;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	z-index: 2;
+	width: fit-content;
+	margin-bottom: 10px;
 }
 
 .galleryInfo {

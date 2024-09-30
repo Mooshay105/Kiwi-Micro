@@ -36,7 +36,7 @@ function GalleryItem({ headerText, description, buttonText, buttonDestination, i
 			<div className={leftOrRight === "right" ? "galleryInfoLeft" : "galleryInfo"}>
 				<h1>{headerText}</h1>
 				<p>{description}</p>
-				<a href={buttonDestination} className="btn">
+				<a href={buttonDestination} className="gallerybtn">
 					{buttonText}
 				</a>
 			</div>
