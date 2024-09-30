@@ -1,5 +1,4 @@
 import GlobalNavBar from "../components/GlobalNavBar";
-import HeroVideo from "../components/HeroVideo";
 import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -11,7 +10,20 @@ function Index() {
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={true} />
-				<HeroVideo headerText="RFID Reader" description="Sleek and Lightweight" buttonText="Learn More" buttonDestination="rfid.html" hasDescription={true} hasButton={true} videoURL={hero} />
+				<section className="hero">
+					<video autoPlay muted loop playsInline className="heroVideo">
+						<source src={hero} type="video/mp4" />
+					</video>
+					<div className="heroOverlay">
+						<div className="heroContent">
+							<h1>Kiwi Micro</h1>
+							<p>Top-Tier Web Development Lives Right Here</p>
+							<a href="gallery.html" className="btn">
+								See Our Code
+							</a>
+						</div>
+					</div>
+				</section>
 				<GlobalFooter />
 			</div>
 		</React.StrictMode>
