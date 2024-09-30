@@ -19,7 +19,6 @@ function Support() {
 						<a href="mailto:contact@kiwi-micro.com" className="btn">
 							contact@kiwi-micro.com
 						</a>
-						<p>Phone: (+61) 0435556028</p>
 						<p>Address: Torbanlea QLD 4662</p>
 					</div>
 				</div>
