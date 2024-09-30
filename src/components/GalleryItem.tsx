@@ -10,7 +10,7 @@ interface GalleryItemProps {
 }
 
 function GalleryItem({ headerText, description, buttonText, buttonDestination, imageURL, leftOrRight = "left" }: GalleryItemProps) {
-	const [isLeftOrRight, setIsLeftOrRight] = React.useState<string>("left");
+	const [isLeftOrRight, setIsLeftOrRight] = React.useState<string>(leftOrRight);
 
 	// run code on window resize
 	React.useEffect(() => {
@@ -30,9 +30,6 @@ function GalleryItem({ headerText, description, buttonText, buttonDestination, i
 			window.removeEventListener("resize", handleResize);
 		};
 	});
-
-	console.log("isLOR " + headerText + " : " + isLeftOrRight);
-	console.log("LOR " + headerText + " : " + leftOrRight);
 	return (
 		<div className="gallery">
 			{isLeftOrRight === "left" && <img src={imageURL} className="galleryImage" alt={headerText} height="400px" width="400px" />}
