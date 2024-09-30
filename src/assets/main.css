@@ -90,6 +90,50 @@ footer {
 	margin-bottom: 5px;
 }
 
+/* Contact Styles */
+
+.galleryImage {
+	border: 0;
+	border-radius: 15px;
+	width: 600px;
+	height: 450px;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 500px) {
+	.galleryImage {
+		width: calc(100vw - 20px);
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-inline: auto;
+	max-width: fit-content;
+}
+
+@media screen and (max-width: 700px) {
+	.gallery {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: 20px;
+}
+
+.info p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 /*Feetured Products Styles*/
 
 .feeturedProducts {

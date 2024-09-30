@@ -1,9 +1,7 @@
 import GlobalNavBar from "../components/GlobalNavBar";
-import HeroVideo from "../components/HeroVideo";
 import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import background from "../assets/hero.mp4";
 import "/assets/main.css";
 
 function Support() {
