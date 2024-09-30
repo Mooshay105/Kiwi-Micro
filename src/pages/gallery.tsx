@@ -4,6 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "/assets/main.css";
 import GalleryItem from "../components/GalleryItem";
+import CustomBreak from "../components/CustomBreak";
 import airportDatabase from "../assets/img/airportDatabase.png";
 import linuxClone from "../assets/img/linuxClone.png";
 
@@ -12,14 +13,12 @@ function Support() {
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={false} />
-				<br />
-				<br />
-				<br />
+				<CustomBreak height={3} />
 				<GalleryItem headerText="Airport Database" description="Hello World" buttonText="Visit" buttonDestination="https://airportdatabase.malcolmjh.com" imageURL={airportDatabase} />
-				<br />
+				<CustomBreak height={1} hasHR={true} />
+				<CustomBreak height={1} />
 				<GalleryItem headerText="Linux Clone" description="Hello World" buttonText="Visit" buttonDestination="https://linux.malcolmjh.com" imageURL={linuxClone} leftOrRight="right" />
-				<br />
-				<br />
+				<CustomBreak height={2} />
 				<GlobalFooter />
 			</div>
 		</React.StrictMode>
