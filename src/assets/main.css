@@ -12,6 +12,11 @@ h1 {
 	margin-bottom: 20px;
 }
 
+.centeredHeader {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
 h2 {
 	color: #dbdbdb;
 	font-size: 2em;

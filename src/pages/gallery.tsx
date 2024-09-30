@@ -13,7 +13,8 @@ function Support() {
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={false} />
-				<CustomBreak height={3} />
+				<CustomBreak height={1} />
+				<h1 className="centeredHeader">Code Gallery</h1>
 				<GalleryItem headerText="Airport Database" description="Hello World" buttonText="Visit" buttonDestination="https://airportdatabase.malcolmjh.com" imageURL={airportDatabase} />
 				<CustomBreak height={1} hasHR={true} />
 				<CustomBreak height={1} />
