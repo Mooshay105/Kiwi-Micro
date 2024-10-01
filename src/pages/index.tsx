@@ -31,7 +31,7 @@ function Index() {
 					<img src={malcolm} width="200px" height="200px" />
 					<div className="column">
 						<h1>Hi, I'm Malcolm.</h1>
-						<p>I am a 13 year-old living in Australia! I like to code in HTML, CSS, JavaScript, Java and a little C.</p>
+						<p>I am a 14 year-old living in Australia! I like to code in HTML, CSS, TypeScript, JavaScript, Java, a little C, and I am learning Swift.</p>
 					</div>
 				</div>
 				<CustomBreak height={1} />
