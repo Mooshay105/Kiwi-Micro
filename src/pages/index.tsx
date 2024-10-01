@@ -4,6 +4,7 @@ import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import hero from "../assets/hero.mp4";
+import malcolm from "../assets/img/malcolm.png";
 import "/assets/main.css";
 
 function Index() {
@@ -27,7 +28,7 @@ function Index() {
 				</section>
 				<CustomBreak height={1} />
 				<div className="aboutMe">
-					<img src="/assets/img/malcolm.png" width="200px" height="200px" />
+					<img src={malcolm} width="200px" height="200px" />
 					<div className="column">
 						<h1>Hi, I'm Malcolm.</h1>
 						<p>I am a 13 year-old living in Australia! I like to code in HTML, CSS, JavaScript, Java and a little C.</p>
