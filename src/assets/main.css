@@ -294,3 +294,31 @@ nav {
 	height: 44px;
 	text-decoration: none;
 }
+
+.aboutMe {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-inline: auto;
+	max-width: fit-content;
+	background-color: #ff000069;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.aboutMe img {
+	margin: 10px;
+}
+
+@media screen and (max-width: 810px) {
+	.aboutMe {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+.column {
+	flex-direction: column;
+}
