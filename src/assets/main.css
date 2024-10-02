@@ -305,14 +305,18 @@ nav {
 	justify-content: center;
 	align-items: center;
 	margin-inline: auto;
-	max-width: fit-content;
 	background-color: #ff000069;
 	border-radius: 15px;
 	padding: 10px;
+	width: calc(100vw - 40px);
 }
 
 .aboutMe img {
 	margin: 10px;
+	width: 200px;
+	height: 200px;
+	min-width: 200px;
+	min-height: 200px;
 }
 
 @media screen and (max-width: 810px) {
