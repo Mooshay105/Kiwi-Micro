@@ -13,7 +13,7 @@ function Support() {
 		<React.StrictMode>
 			<div className="main">
 				<GlobalNavBar blur={false} />
-				<CustomBreak height={1} />
+				<CustomBreak height={2} />
 				<h1 className="centeredHeader">Code Gallery</h1>
 				<CustomBreak height={1} hasHR={true} paddBothSides={true} />
 				<GalleryItem headerText="Airport Database" description="Airport Database is a database of most of the IATA registered airports in the world." buttonText="Visit" buttonDestination="https://airportdatabase.malcolmjh.com" imageURL={airportDatabase} leftOrRight="left" />
