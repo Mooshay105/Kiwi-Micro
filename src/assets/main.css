@@ -2,7 +2,8 @@
 
 * {
 	user-select: none;
-	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
 	--errorPageColor: #040404;
 }
 
@@ -28,6 +29,10 @@ p {
 	color: #c3c3c3;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -40,8 +45,9 @@ body {
 footer {
 	position: absolute;
 	text-align: center;
-	width: 100%;
-	padding: 10px;
+	width: 100vw;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	background-color: #0a0a0a;
 	color: #ffffff;
 	z-index: 999;
@@ -107,7 +113,7 @@ footer {
 
 @media screen and (max-width: 500px) {
 	.galleryImage {
-		width: calc(100vw - 20px);
+		width: calc(100% - 20px);
 	}
 }
 
@@ -260,7 +266,7 @@ nav {
 	z-index: 3;
 	display: block;
 	margin: 0;
-	width: 100%;
+	width: 100vw;
 	height: 48px;
 	max-height: 44px;
 	background: #00000080;
@@ -308,7 +314,7 @@ nav {
 	background-color: #ff000069;
 	border-radius: 15px;
 	padding: 10px;
-	width: calc(100vw - 40px);
+	width: calc(100% - 40px);
 }
 
 .aboutMe img {
