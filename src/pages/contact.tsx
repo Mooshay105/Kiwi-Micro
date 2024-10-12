@@ -4,7 +4,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "/assets/main.css";
 
-function Support() {
+function Contact() {
 	return (
 		<React.StrictMode>
 			<div className="main">
@@ -30,4 +30,4 @@ function Support() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Support />);
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Contact />);

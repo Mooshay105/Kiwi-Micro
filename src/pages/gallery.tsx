@@ -8,7 +8,7 @@ import CustomBreak from "../components/CustomBreak";
 import airportDatabase from "../assets/img/airportDatabase.png";
 import linuxClone from "../assets/img/linuxClone.png";
 
-function Support() {
+function Gallery() {
 	return (
 		<React.StrictMode>
 			<div className="main">
@@ -26,4 +26,4 @@ function Support() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Support />);
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Gallery />);
