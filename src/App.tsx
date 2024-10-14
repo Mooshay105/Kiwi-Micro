@@ -9,8 +9,8 @@ import Contact from "./pages/Contact";
 function App() {
 	return (
 		<div>
-			<GlobalNavBar blur={true} />
 			<Router>
+				<GlobalNavBar blur={true} />
 				<Switch>
 					<Route exact path="/">
 						<Index />
