@@ -1,8 +1,7 @@
 import GlobalNavBar from "../components/GlobalNavBar";
 import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
-import ReactDOM from "react-dom/client";
-import "/assets/main.css";
+import "../assets/main.css";
 
 function Contact() {
 	return (
@@ -30,4 +29,4 @@ function Contact() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Contact />);
+export default Contact;

@@ -2,12 +2,11 @@ import GlobalNavBar from "../components/GlobalNavBar";
 import CustomBreak from "../components/CustomBreak";
 import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
-import ReactDOM from "react-dom/client";
 import hero from "../assets/hero.mp4";
 import malcolm from "../assets/img/malcolm.png";
-import "/assets/main.css";
+import "../assets/main.css";
 
-function App() {
+function Index() {
 	return (
 		<React.StrictMode>
 			<div className="main">
@@ -41,4 +40,4 @@ function App() {
 	);
 }
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<App />);
+export default Index;

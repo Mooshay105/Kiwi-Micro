@@ -1,4 +1,5 @@
 import logo from "../assets/img/logo.png";
+import { Link } from "react-router-dom";
 
 interface GlobalNavBarProps {
 	blur: boolean;
@@ -12,12 +13,12 @@ function GlobalNavBar({ blur }: GlobalNavBarProps) {
 					<a href="https://kiwi-micro.com" className="navLink">
 						<img src={logo} width="30px" height="30px" alt="Logo" />
 					</a>
-					<a href="gallery.html" className="navLink">
+					<Link to="gallery" className="navLink">
 						Gallery
-					</a>
-					<a href="contact.html" className="navLink">
+					</Link>
+					<Link to="contact" className="navLink">
 						Contact
-					</a>
+					</Link>
 				</ul>
 			</div>
 		</nav>
