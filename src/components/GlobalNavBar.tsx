@@ -10,9 +10,9 @@ function GlobalNavBar({ blur }: GlobalNavBarProps) {
 		<nav className={blur ? "navBlur" : ""}>
 			<div className="navContent">
 				<ul className="navList">
-					<Link to="https://kiwi-micro.com" className="navLink">
+					<a href="https://kiwi-micro.com" className="navLink">
 						<img src={logo} width="30px" height="30px" alt="Logo" />
-					</Link>
+					</a>
 					<Link to="gallery" className="navLink">
 						Gallery
 					</Link>
