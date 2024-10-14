@@ -1,11 +1,12 @@
 import GlobalNavBar from "../components/GlobalNavBar";
 import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
+import ReactDOM from "react-dom/client";
+import "/assets/main.css";
 import GalleryItem from "../components/GalleryItem";
 import CustomBreak from "../components/CustomBreak";
 import airportDatabase from "../assets/img/airportDatabase.png";
 import linuxClone from "../assets/img/linuxClone.png";
-import "../assets/main.css";
 
 function Gallery() {
 	return (
@@ -25,4 +26,4 @@ function Gallery() {
 	);
 }
 
-export default Gallery;
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(<Gallery />);
