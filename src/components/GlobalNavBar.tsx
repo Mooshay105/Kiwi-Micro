@@ -13,8 +13,8 @@ function GlobalNavBar({ blur }: GlobalNavBarProps) {
 					<a href="https://kiwi-micro.com" className="navLink">
 						<img src={logo} width="30px" height="30px" alt="Logo" />
 					</a>
-					<Link to="gallery" className="navLink">
-						Gallery
+					<Link to="https://kiwi-micro.com" className="navLink">
+						Home
 					</Link>
 					<Link to="contact" className="navLink">
 						Contact

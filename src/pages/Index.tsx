@@ -4,6 +4,9 @@ import GlobalFooter from "../components/GlobalFooter";
 import React from "react";
 import hero from "../assets/hero.mp4";
 import malcolm from "../assets/img/malcolm.png";
+import GalleryItem from "../components/GalleryItem";
+import airportDatabase from "../assets/img/airportDatabase.png";
+import linuxClone from "../assets/img/linuxClone.png";
 import "../assets/main.css";
 
 function Index() {
@@ -33,7 +36,13 @@ function Index() {
 						<p>I am a 14 year-old living in Australia! I like to code in HTML, CSS, TypeScript, JavaScript, Java, a little C, and I am learning Swift.</p>
 					</div>
 				</div>
-				<CustomBreak height={1} />
+				<CustomBreak height={2} />
+				<h1 className="centeredHeader">Code Gallery</h1>
+				<CustomBreak height={1} hasHR={true} paddBothSides={true} />
+				<GalleryItem headerText="Airport Database" description="Airport Database is a database of most of the IATA registered airports in the world." buttonText="Visit" buttonDestination="https://airportdatabase.malcolmjh.com" imageURL={airportDatabase} leftOrRight="left" />
+				<CustomBreak height={1} hasHR={true} paddBothSides={true} />
+				<GalleryItem headerText="Linux Clone" description="Linux Clone is a clone of Linux I made for some fun." buttonText="Visit" buttonDestination="https://linux.malcolmjh.com" imageURL={linuxClone} leftOrRight="right" />
+				<CustomBreak height={2} />
 				<GlobalFooter />
 			</div>
 		</React.StrictMode>

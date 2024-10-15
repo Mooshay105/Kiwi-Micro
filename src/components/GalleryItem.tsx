@@ -12,24 +12,22 @@ interface GalleryItemProps {
 function GalleryItem({ headerText, description, buttonText, buttonDestination, imageURL, leftOrRight = "left" }: GalleryItemProps) {
 	const [isLeftOrRight, setIsLeftOrRight] = React.useState<string>(leftOrRight);
 
-	// run code on window resize
-	React.useEffect(() => {
-		function handleResize() {
-			if (leftOrRight === "left" || window.innerWidth < 500) {
-				setIsLeftOrRight("left");
-			} else if (leftOrRight === "right") {
-				setIsLeftOrRight("right");
-			} else {
-				setIsLeftOrRight("right");
-			}
+	function handleResize() {
+		if (leftOrRight === "left" || window.innerWidth < 500) {
+			setIsLeftOrRight("left");
+		} else if (leftOrRight === "right") {
+			setIsLeftOrRight("right");
+		} else {
+			setIsLeftOrRight("right");
 		}
+	}
 
-		window.addEventListener("resize", handleResize);
-
-		return () => {
-			window.removeEventListener("resize", handleResize);
-		};
-	});
+	React.useEffect(() => {
+		const interval = setInterval(() => {
+			handleResize();
+		}, 1);
+		return () => clearInterval(interval);
+	}, []);
 	return (
 		<div className="gallery">
 			{isLeftOrRight === "left" && <img src={imageURL} className="galleryImage" alt={headerText} />}
